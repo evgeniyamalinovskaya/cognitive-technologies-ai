@@ -11,7 +11,6 @@ const swiperSectionAbout = new Swiper('.about__cards-container', {
    },
 
    slidesPerView: 3,
-   watchOverflow: false,
    spaceBetween: 32,
    initialSlide: 0
 });
