@@ -5,15 +5,15 @@
 }
 
 .about__cards-container {
-    max-width: 1150px;
-    margin: 0 15px 0 20px;
+	max-width: 1150px;
+	margin: 0 15px 0 20px;
 }
 
 .about__slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
 }
 
 .about__card-pin {
@@ -54,7 +54,7 @@
 .about__card {
 	position: relative;
 	max-width: 320px;
-	min-height: 306px;
+	min-height: 330px;
 	padding: 20px 20px 30px;
 	background: #e0f0ff;
 	border-radius: 10px;
@@ -91,6 +91,8 @@
 	line-height: 19px;
 	color: #000d26;
 	border-top: 1px solid #009fac;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .about__cards-pagination {
@@ -105,15 +107,107 @@
 }
 
 .about__cards-button {
-    position: relative;
-	width: 60px;
+	position: relative;
+	min-width: 60px;
 	height: 60px;
-	background: #001337;
+	background: #001337;	
 	box-shadow: 0px 4px 30px rgba(224, 240, 255, 0.1);
 	border-radius: 36px;
+}
+
+.about__cards-button_prev {
+	background-image: url("/images/arrow-left_white.svg");
+	background-size: cover;
+}
+
+.about__cards-button_next {
+	background-image: url("/images/arrow-right_white.svg");
+	background-size: cover;
 }
 
 .about__cards-button::after {
 	display: none;
 }
 
+@media (max-width: 1100px) {
+	.about__cards-button {
+		display: none;
+	}
+
+	.about__card {
+		max-width: 304px;
+		min-height: 310px;
+	}
+
+	.about {
+		padding: 60px 0 60px 39px;
+	}
+
+	.about__cards-container {
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.about__title {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.about__text {
+		max-width: 690px;
+		padding-right: 20px;
+		margin: 30px 0;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.about {
+		padding: 40px 0;
+	}
+
+	.about__cards-container {
+		margin: 0 10px;
+	}
+
+	.about__card {
+		max-width: 258px;
+		min-height: 240px;
+		padding: 16px;
+	}
+
+	.about__cards-pagination {
+		margin-top: 16px;
+	}
+
+	.about__title {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.about__text {
+		padding-left: 20px;
+		margin: 12px 0 20px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.about__card-date {
+		font-size: 12px;
+		line-height: 145%;
+	}
+
+	.about__card-title {
+		margin: 8px 0 12px;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.about__card-text {
+		padding-top: 12px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
