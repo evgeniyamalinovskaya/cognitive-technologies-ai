@@ -7,6 +7,9 @@
     flex-direction: column;
     justify-content: center;
     background-image: url(../../images/intro_mobile.png);
+    background-color: #001337;
+    background-repeat: no-repeat;
+    background-position-x: right;
     color: #fff;   
 }
 
@@ -54,6 +57,8 @@
 }
 
 
-@media (min-width: 650px) {
-
+@media (min-width: 450px) {
+    .intro {
+        background-image: url(../../images/intro_tablet.png);
+    }
 }
