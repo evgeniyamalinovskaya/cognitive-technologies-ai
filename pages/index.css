@@ -2,4 +2,5 @@
 @import '../vendor/fonts.css';
 @import '../vendor/normalize.css';
 @import '../blocks/about/about.css';
+@import '../blocks/publications/publications.css';
 @import '../blocks/intro/intro.css';

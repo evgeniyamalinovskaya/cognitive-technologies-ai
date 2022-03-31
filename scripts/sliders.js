@@ -1,6 +1,6 @@
-export const swiperSectionAbout = new Swiper('.about__cards-container', {
+const swiperAbout = new Swiper('.about__cards-container', {
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.about__cards-pagination',
 		clickable: true,
 	},
 
@@ -9,12 +9,12 @@ export const swiperSectionAbout = new Swiper('.about__cards-container', {
 	},
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.about__cards-button_next',
+		prevEl: '.about__cards-button_prev',
 	},
 
 	mousewheel: true,
-	slidesPerView: 1.03,
+	slidesPerView: 1.025,
 	spaceBetween: 10,
 	initialSlide: 0,
 
@@ -27,6 +27,60 @@ export const swiperSectionAbout = new Swiper('.about__cards-container', {
 		900: {
 			slidesPerView: 3,
 			spaceBetween: 32,
+		},
+	},
+});
+
+const swiperPublications = new Swiper('.publications__cards-container', {
+	pagination: {
+		el: '.publications__cards-pagination',
+		clickable: true,
+	},
+
+	scrollbar: {
+		draggable: true,
+	},
+
+	navigation: {
+		nextEl: '.publications__cards-button_next',
+		prevEl: '.publications__cards-button_prev',
+	},
+
+	mousewheel: true,
+	slidesPerView: 1.027,
+	spaceBetween: 10,
+	initialSlide: 0,
+
+	breakpoints: {
+		500: {
+			slidesPerView: 1.5,
+			spaceBetween: 8,			
+		},
+
+		600: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+			grid: {
+				rows: 1,
+			  },
+		},
+
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+			grid: {
+				rows: 2,
+			  },
+			
+		},
+
+		1132: {
+			slidesPerView: 3,
+			spaceBetween: 32,
+			grid: {
+				rows: 2,
+			  },
+			
 		},
 	},
 });
