@@ -1,5 +1,6 @@
 export * from './sliders.js';
 
+
 //Бургерного меню
 
 const headerMenuButton = document.querySelector('.header__menu-button');
@@ -24,4 +25,7 @@ headerBurgerCloseButton.addEventListener('click', function (event) {
 headerBurgerCloseButton.addEventListener('click', function (event) {
     headerBurger.classList.remove('header__burger_opened');
 });
+
+
+export * from './publicationsTooltip.js';
 

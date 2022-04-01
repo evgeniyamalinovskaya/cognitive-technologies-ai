@@ -1,5 +1,12 @@
 @import '../blocks/page/page.css';
 @import '../vendor/fonts.css';
 @import '../vendor/normalize.css';
+
 @import '../blocks/header/header.css';
 @import '../blocks/about/about.css';
+
+@import '../blocks/intro/intro.css';
+@import '../blocks/about/about.css';
+@import '../blocks/publications/publications.css';
+@import '../blocks/team/team.css';
+
