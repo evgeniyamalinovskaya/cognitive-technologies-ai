@@ -5,15 +5,15 @@
 }
 
 .about__cards-container {
-	max-width: 1150px;
-	margin: 0 15px 0 20px;
+	max-width: 1125px;
+	margin-left: 16px;
+	margin-right: 16px;
 }
 
 .about__slider-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 20px;
+	justify-content: center;	
 }
 
 .about__card-pin {
@@ -129,11 +129,13 @@
 	display: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1438px) {
 	.about__cards-button {
 		display: none;
 	}
+}
 
+@media (max-width: 1100px) {
 	.about__card {
 		max-width: 304px;
 		min-height: 310px;

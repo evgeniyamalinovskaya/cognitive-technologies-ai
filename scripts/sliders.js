@@ -15,18 +15,18 @@ const swiperAbout = new Swiper('.about__cards-container', {
 
 	mousewheel: true,
 	slidesPerView: 1.025,
-	spaceBetween: 10,
+	spaceBetween: 8,
 	initialSlide: 0,
 
 	breakpoints: {
 		400: {
-			slidesPerView: 2,
-			spaceBetween: 30,
+			slidesPerView: 2.055,
+			spaceBetween: 16,
 		},
 
 		900: {
 			slidesPerView: 3,
-			spaceBetween: 32,
+			spaceBetween: 20,
 		},
 	},
 });
@@ -48,7 +48,7 @@ const swiperPublications = new Swiper('.publications__cards-container', {
 
 	mousewheel: true,
 	slidesPerView: 1.027,
-	spaceBetween: 10,
+	spaceBetween: 8,
 	initialSlide: 0,
 
 	breakpoints: {
@@ -81,6 +81,39 @@ const swiperPublications = new Swiper('.publications__cards-container', {
 				rows: 2,
 			  },
 			
+		},
+	},
+});
+
+const swiperTeam = new Swiper('.team__cards-container', {
+	pagination: {
+		el: '.team__cards-pagination',
+		clickable: true,
+	},
+
+	scrollbar: {
+		draggable: true,
+	},
+
+	navigation: {
+		nextEl: '.team__cards-button_next',
+		prevEl: '.team__cards-button_prev',
+	},
+
+	mousewheel: true,
+	slidesPerView: 2.06,
+	spaceBetween: 8,
+	initialSlide: 0,
+
+	breakpoints: {
+		600: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
+
+		900: {
+			slidesPerView: 4,
+			spaceBetween: 30,
 		},
 	},
 });
