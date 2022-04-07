@@ -57,8 +57,28 @@
 }
 
 
-@media (min-width: 450px) {
+@media (min-width: 550px) {
     .intro {
         background-image: url(../../images/intro_tablet.png);
     }
+}
+
+@media (min-width: 760px) {
+    .intro {
+        height: 588px;
+        padding: 60px 40px;
+    }
+
+    .intro__title {
+        width: 444px;
+        height: 288px;
+        margin-bottom: 12px;
+    }
+
+    .intro__text {
+        width: 444px;
+        height: 68px;
+        margin-bottom: 40px;
+    }
+
 }
