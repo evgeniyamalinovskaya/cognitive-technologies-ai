@@ -100,12 +100,18 @@
 }
 
 
+@media (min-width: 1100px) {
+    .intro {
+        padding: 60px 80px;
+    } 
+
+
 @media (min-width: 1150px) {
     .intro {
         background-image: url(../../images/intro_desktop.png);
-        height: 616px;
+        height: 696px;
         max-width: 1440px;
-        padding: 92px 80px 0 92px;
+        padding: 92px 80px 80px 92px;
         align-items: flex-end;
     } 
 
@@ -131,6 +137,8 @@
 
 @media (min-width: 1440px) {
     .intro {
+        margin: auto;
         padding: 92px 164px 0 92px;
+        background-color: #001337;
     } 
 }
