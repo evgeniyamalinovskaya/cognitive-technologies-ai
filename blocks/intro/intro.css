@@ -5,7 +5,6 @@
     padding: 30px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-image: url(../../images/intro_mobile.png);
     background-color: #001337;
     background-repeat: no-repeat;
@@ -14,6 +13,7 @@
 }
 
 .intro__title {
+    margin: 0;
     width: 256px;
     font-style: normal;
 	font-weight: 400;
@@ -60,9 +60,6 @@
 @media (min-width: 550px) {
     .intro {
         background-image: url(../../images/intro_tablet.png);
-    }
-
-    .intro {
         height: 588px;
         padding: 60px 40px;
     }
@@ -91,7 +88,7 @@
     .intro__button {
         width: 330px;
         height: 60px;
-        margin-top: 0;
+        margin: 0;
         padding: 15px 16px;
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
@@ -100,5 +97,40 @@
         font-size: 18px;
         line-height: 30px;
     }
+}
 
+
+@media (min-width: 1150px) {
+    .intro {
+        background-image: url(../../images/intro_desktop.png);
+        height: 616px;
+        max-width: 1440px;
+        padding: 92px 80px 0 92px;
+        align-items: flex-end;
+    } 
+
+    .intro__text {
+        width: 444px;
+        height: 68px;
+        margin: 0 0 52px 0;
+        font-size: 20px;
+    }
+
+    .intro__button {
+        width: 318px;
+        margin: 0 126px 0 0;
+        padding: 16px;
+        cursor: pointer;
+    }
+
+    .intro__button:hover{
+        color: #E0F0FF;
+        border: 1px solid #E0F0FF;
+    }
+}
+
+@media (min-width: 1440px) {
+    .intro {
+        padding: 92px 164px 0 92px;
+    } 
 }
