@@ -61,9 +61,7 @@
     .intro {
         background-image: url(../../images/intro_tablet.png);
     }
-}
 
-@media (min-width: 760px) {
     .intro {
         height: 588px;
         padding: 60px 40px;
