@@ -103,42 +103,43 @@
 @media (min-width: 1100px) {
     .intro {
         padding: 60px 80px;
-    } 
-
-
-@media (min-width: 1150px) {
-    .intro {
-        background-image: url(../../images/intro_desktop.png);
-        height: 696px;
-        max-width: 1440px;
-        padding: 92px 80px 80px 92px;
-        align-items: flex-end;
-    } 
-
-    .intro__text {
-        width: 444px;
-        height: 68px;
-        margin: 0 0 52px 0;
-        font-size: 20px;
     }
 
-    .intro__button {
-        width: 318px;
-        margin: 0 126px 0 0;
-        padding: 16px;
-        cursor: pointer;
+
+    @media (min-width: 1150px) {
+        .intro {
+            background-image: url(../../images/intro_desktop.png);
+            height: 696px;
+            max-width: 1440px;
+            padding: 92px 80px 80px 92px;
+            align-items: flex-end;
+        }
+
+        .intro__text {
+            width: 444px;
+            height: 68px;
+            margin: 0 0 52px 0;
+            font-size: 20px;
+        }
+
+        .intro__button {
+            width: 318px;
+            margin: 0 126px 0 0;
+            padding: 16px;
+            cursor: pointer;
+        }
+
+        .intro__button:hover {
+            color: #E0F0FF;
+            border: 1px solid #E0F0FF;
+        }
     }
 
-    .intro__button:hover{
-        color: #E0F0FF;
-        border: 1px solid #E0F0FF;
+    @media (min-width: 1440px) {
+        .intro {
+            margin: auto;
+            padding: 92px 164px 0 92px;
+            background-color: #001337;
+        }
     }
-}
-
-@media (min-width: 1440px) {
-    .intro {
-        margin: auto;
-        padding: 92px 164px 0 92px;
-        background-color: #001337;
-    } 
 }
