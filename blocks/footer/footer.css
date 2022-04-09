@@ -1,0 +1,279 @@
+.footer {
+    color: #fff;
+    background-color: #001337;
+    width: 100%;
+}
+
+.footer__container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: grid;
+    gap: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1420px) {
+    .footer__container {
+        gap: 37px;
+    }
+}
+.footer__description {
+    padding: 80px 0 80px 165px;
+    width: 263px;
+}
+
+@media (max-width: 1310px) {
+    .footer__description {
+        padding-left: 43px;
+    }
+}
+
+.footer__logo {
+    width: 150px;
+    height: 54px;
+    display: block;
+}
+
+@media (max-width: 745px) {
+    .footer__logo {
+        width: 98px;
+        height: 33px;
+    }
+}
+
+
+.footer__copyright {
+    margin: 37.5px 0 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+.footer__text {
+    margin: 30px 0 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+@media (max-width: 745px) {
+    .footer__text {
+        display: none;
+    }
+}
+
+.footer__students {
+    margin: 37.5px 0 0 0;
+    opacity: 0.5;
+    white-space: nowrap;
+}
+
+@media (max-width: 745px) {
+    .footer__students {
+        display: none;
+    }
+}
+
+.footer__nav {
+    margin: 171.5px 0 0 0;
+}
+
+@media (max-width: 745px) {
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.footer__link-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+    margin: 0;
+}
+
+.footer__list {
+    list-style-type: none;
+    margin: 12px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer__item {
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer__item:hover {
+    color: #009FAC;
+}
+
+.footer__contacts {
+    width: 206px;
+    padding: 171.5px 165px 0 0;
+}
+
+@media (max-width: 1310px) {
+    .footer__contacts {
+        padding-right: 43px;
+    }
+}
+
+
+.footer__city {
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.footer__address {
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 12px 0 0 0;
+}
+
+.footer__phones {
+    list-style-type: none;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+
+.footer__phone {
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 2px 0 0 0;
+    padding: 0;
+}
+
+
+.footer__e-mail {
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 8px 0 0 0;
+}
+
+
+.footer__social {
+    list-style-type: none;
+    margin: 66px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.footer__social-item {
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.footer__social-item:last-of-type {
+    margin: 0;
+}
+
+@media (max-width: 870px) {
+
+    .footer__description {
+        width: 204px;
+        padding-top: 60px;
+        padding-bottom: 64px;
+    }
+
+    .footer__copyright {
+        margin: 30px 0 0 0;
+        width: 241px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer__text {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+    }
+
+    .footer__signature {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+    }
+
+    .footer__nav {
+        margin: 195px 0 0 0;
+    }
+
+    .footer__link-title {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+    }
+
+    .footer__item {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer__contacts {
+        padding-top: 195px;
+    }
+
+    .footer__city {
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+    }
+
+    .footer__address {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+    }
+
+    .footer__phone {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+    }
+
+    .footer__phone {
+           font-size: 12px;
+           line-height: 20px;
+           letter-spacing: 0.1px;
+    }
+
+    .footer__e-mail {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+    }
+
+    .footer__social {
+        margin: 90px 0 0 0;
+    }
+}
+
