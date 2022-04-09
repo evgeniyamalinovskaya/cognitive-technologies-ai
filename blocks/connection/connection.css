@@ -1,0 +1,249 @@
+.connection {
+    width: 100%;
+    background-color: #009FAC;
+}
+
+.color-form {
+    width: 320px;
+    height: 643px;
+    margin: 0 auto;
+    padding: 40px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;  
+}
+
+.title {
+    width: 288px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text {
+    margin: 23px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    width: 288px;
+    height: 44px;
+    margin: 0 0 12px 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #009FAC;
+}
+
+.form-field::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #009FAC;
+}
+
+.form-area {
+    width: 288px;
+    height: 140px;
+    margin: 0 0 23px 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #009FAC;
+}
+
+.form-area::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #009FAC;
+}
+
+.form-button {
+    width: 288px;
+    height: 44px;
+    padding: 12px 16px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form-button:hover{
+    color: #E0F0FF;
+    border: 1px solid #E0F0FF;
+}
+
+
+
+@media (min-width: 768px) {
+    .color-form {
+        width: 768px;
+        height: 456px;
+        padding: 60px 40px;
+        box-sizing: border-box;
+    }
+    
+    .title {
+        width: 220px;
+        height: 32px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .text {
+        margin: 36px 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: repeat(3, 210px);
+        grid-template-rows: repeat(2, 44px);
+        grid-template-areas: 
+        "form-field_first-name form-field_last-name form-area" 
+        "form-field_phone form-field_email form-area";
+        gap: 20px 28px;
+    }
+    
+    .form-field {
+        width: 210px;
+        height: 44px;
+        margin: 0;
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .form-field::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .form-area {
+        width: 212px;
+        height: 108px;
+        margin: 0 ;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        grid-area: form-area;
+    }
+    
+    .form-area::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .form-button {
+        width: 210px;
+        height: 44px;
+        margin: 36px 0 60px 0;
+        padding: 6px 16px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+    .color-form {
+        width: 1120px;
+        height: 576px;
+        padding: 80px 4px 36px 4px;
+    }
+    
+    .title {
+        width: 328px;
+        height: 68px;
+        font-size: 36px;
+        line-height: 68px;
+    }
+    
+    .text {
+        width: 880px;
+        margin-bottom: 60px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: repeat(3, 352px);
+        grid-template-rows: repeat(2, 60px);
+    }
+    
+    .form-field {
+        width: 352px;
+        height: 60px;
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    .form-field::placeholder {
+        font-size: 18px;
+    }
+    
+    .form-area {
+        width: 352px;
+        height: 140px;
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    .form-area::placeholder {
+        font-size: 18px;
+    }
+    
+    .form-button {
+        margin: 36px auto;
+        width: 352px;
+        height: 60px;
+        padding: 14px 16px;
+    }
+
+}
