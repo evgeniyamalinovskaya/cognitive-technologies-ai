@@ -13,20 +13,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media (max-width: 1420px) {
-    .footer__container {
-        gap: 37px;
-    }
-}
 .footer__description {
     padding: 80px 0 80px 165px;
     width: 263px;
-}
-
-@media (max-width: 1310px) {
-    .footer__description {
-        padding-left: 43px;
-    }
 }
 
 .footer__logo {
@@ -34,14 +23,6 @@
     height: 54px;
     display: block;
 }
-
-@media (max-width: 745px) {
-    .footer__logo {
-        width: 98px;
-        height: 33px;
-    }
-}
-
 
 .footer__copyright {
     margin: 37.5px 0 0 0;
@@ -51,7 +32,6 @@
     line-height: 19px;
 }
 
-
 .footer__text {
     margin: 30px 0 0 0;
     font-style: normal;
@@ -60,34 +40,16 @@
     line-height: 19px;
 }
 
-@media (max-width: 745px) {
-    .footer__text {
-        display: none;
-    }
-}
-
 .footer__students {
     margin: 37.5px 0 0 0;
     opacity: 0.5;
     white-space: nowrap;
 }
 
-@media (max-width: 745px) {
-    .footer__students {
-        display: none;
-    }
-}
-
 .footer__nav {
     margin: 171.5px 0 0 0;
 }
 
-@media (max-width: 745px) {
-    .footer__nav {
-        display: flex;
-        flex-direction: column;
-    }
-}
 .footer__link-title {
     font-weight: 600;
     font-size: 14px;
@@ -127,13 +89,6 @@
     padding: 171.5px 165px 0 0;
 }
 
-@media (max-width: 1310px) {
-    .footer__contacts {
-        padding-right: 43px;
-    }
-}
-
-
 .footer__city {
     font-size: 18px;
     line-height: 30px;
@@ -141,7 +96,6 @@
     font-weight: 600;
     margin: 0;
 }
-
 
 .footer__address {
     font-size: 14px;
@@ -157,7 +111,6 @@
     padding: 0;
 }
 
-
 .footer__phone {
     font-size: 14px;
     line-height: 19px;
@@ -167,7 +120,6 @@
     padding: 0;
 }
 
-
 .footer__e-mail {
     font-size: 14px;
     line-height: 19px;
@@ -175,7 +127,6 @@
     font-weight: 400;
     margin: 8px 0 0 0;
 }
-
 
 .footer__social {
     list-style-type: none;
@@ -192,6 +143,23 @@
 
 .footer__social-item:last-of-type {
     margin: 0;
+}
+
+@media (max-width: 1420px) {
+    .footer__container {
+        gap: 37px;
+    }
+}
+
+@media (max-width: 1310px) {
+
+    .footer__description {
+        padding-left: 43px;
+    }
+
+    .footer__contacts {
+        padding-right: 43px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -277,3 +245,23 @@
     }
 }
 
+@media (max-width: 745px) {
+
+    .footer__logo {
+        width: 98px;
+        height: 33px;
+    }
+
+    .footer__text {
+        display: none;
+    }
+
+    .footer__students {
+        display: none;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+    }
+}

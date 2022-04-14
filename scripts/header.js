@@ -24,3 +24,26 @@ headerBurgerCloseButton.addEventListener('click', function (event) {
     headerBurger.classList.remove('header__burger_opened');
 });
 
+//добавлять/убирать класс для нужных элементов(при нажатии на Образование добавляется Магистратура и Аспирантура)
+
+const menuItem = document.getElementById('education-item');
+const classAddEducation = document.querySelector('.header__link_add');
+const menuClass = document.querySelector('.dropdown-menu');
+const liClass = document.querySelector('.header__li');
+
+
+menuItem.addEventListener('click', function () {
+    // menuClass.classList.add('header__link_add');
+
+    console.log(this)
+    const subItem = this.querySelector('.dropdown-menu');
+
+    console.log(subItem)
+
+    subItem.style.display = "flex"
+});
+
+// education.addEventListener('click', function () {
+//     menuClass.classList.remove('header__link_add');
+// })
+
