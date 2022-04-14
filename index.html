@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,25 +15,25 @@
 					<button class="header__menu-button" type="button" aria-label="Меню"></button>
 					<nav class="header__menu">
 						<ul class="header__list">
-							<li>
-								<a href="#" class="header__link">О&nbsp;нас</a>
+							<li class="header__li">
+								<a href="#about" class="header__link">О&nbsp;нас</a>
 							</li>
-							<li>
+							<li class="header__li">
 								<a href="#" class="header__link">Лаборатория</a>
 							</li>
-							<li>
+							<li class="header__li">
 								<a href="#" class="header__link">Проекты</a>
 							</li>
-							<li>
+							<li class="header__li">
 								<a href="#" class="header__link">Образование</a>
 							</li>
-							<li>
-								<a href="#" class="header__link">Публикации</a>
+							<li class="header__li">
+								<a href="#publications" class="header__link">Публикации</a>
 							</li>
-							<li>
-								<a href="#" class="header__link">Команда</a>
+							<li class="header__li">
+								<a href="#team" class="header__link">Команда</a>
 							</li>
-							<li>
+							<li class="header__li">
 								<a href="#" class="header__link">Связаться</a>
 							</li>
 						</ul>
@@ -43,25 +43,36 @@
 					<img src="images/Logo_AI%201.png" alt="Лого" class="header__burger-logo" />
 					<nav class="header__burger-menu">
 						<ul class="header__list">
-							<li>
-								<a href="#" class="header__link">О нас</a>
+							<li class="header__li">
+								<a href="#about" class="header__link">О нас</a>
 							</li>
-							<li>
+							<li class="header__li">
 								<a href="#" class="header__link">Лаборатория</a>
 							</li>
-							<li>
+							<li class="header__li">
 								<a href="#" class="header__link">Проекты</a>
 							</li>
-							<li>
-								<a href="#" class="header__link">Образование</a>
+							<li class="header__li .active" id="education-item">
+								<a href="#" class="header__link header__link_education">Образование</a>
+
+								<ul class="dropdown-menu">
+									<li class="header__li">
+										<a href="#" class="header__link header__link_add">Магистратура</a>
+									</li>
+									<li class="header__li">
+										<a href="#" class="header__link header__link_add">Аспирантура</a>
+									</li>
+								</ul>
+
 							</li>
-							<li>
-								<a href="#" class="header__link">Публикации</a>
+
+							<li class="header__li">
+								<a href="#publications" class="header__link">Публикации</a>
 							</li>
-							<li>
-								<a href="#" class="header__link">Команда</a>
+							<li class="header__li">
+								<a href="#team" class="header__link">Команда</a>
 							</li>
-							<li>
+							<li class="header__li">
 								<a href="#" class="header__link">Связаться</a>
 							</li>
 						</ul>
@@ -70,6 +81,7 @@
 				</div>
 			</header>
 			<main>
+
 				<section class="intro">
 					<h1 class="intro__title">
 						<span class="intro__title-emphasis">Когнитивные технологии,</span>
@@ -78,10 +90,14 @@
 					<p class="intro__text">
 						Системы прикладного искусственного интеллекта
 					</p>
-					<button>наши проекты</button>
+					<a href="#projects">
+						<button class="intro__button">
+							наши проекты
+						</button>
+					</a>
 				</section>
 
-				<section class="about">
+				<section id="about" class="about">
 					<h2 class="about__title">Несколько слов о нас</h2>
 					<p class="about__text">
 						Национальный центр когнитивных разработок – центр национальной
@@ -363,6 +379,13 @@
 				</section>
 
 				<section class="publications">
+
+				<section  id="projects" class="projects">
+					<img src="./images/for_projects.png" alt="заглушка для секции">
+				</section>
+
+				<section id="publications" class="publications">
+
 					<h2 class="publications__title">Публикации</h2>
 					<div class="publications__slider-container">
 						<div
@@ -1334,7 +1357,7 @@
 					</div>
 				</section>
 
-				<section class="team">
+				<section id="team" class="team">
 					<h2 class="team__title">НАША КОМАНДА</h2>
 					<div class="team__slider-container">
 						<div
@@ -1438,8 +1461,114 @@
 						></div>
 					</div>
 				</section>
+
+				<section class="connection">
+					<div class="color-form">
+						<h2 class="title">ВСЕГДА НА СВЯЗИ</h2>
+						<p class="text">
+							По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам, 
+							написать на почту или оставить свое сообщение через форму обратной связи.
+						</p>
+
+						<form class="form">
+							<input id="first-name" type="text" class="form-field form-field_first-name" 
+								placeholder="Имя" required>
+							<input id="last-name" type="text" class="form-field form-field_last-name" 
+								placeholder="Фамилия">
+							<input id="phone" type="tel" class="form-field form-field_phone" 
+								placeholder="Телефон">
+							<input id="email" type="email" class="form-field form-field_email" 
+								placeholder="E-mail" required>
+							<textarea id="message" type="text" class="form-area" 
+								placeholder="Сообщение" required></textarea>
+						</form>
+
+						<button type="submit" class="form-button">ОТПРАВИТЬ</button>
+					</div>
+
+				</section>
+
+
 			</main>
 		</div>
+		<footer class="footer">
+			<div class="footer__container">
+			<div class="footer__description">
+				<img src="images/Logo_AI%201.png" alt="Лого" class="footer__logo">
+				<p class="footer__copyright">Информация &copy;&nbsp;2020 Университет ИТМО</p>
+				<p class="footer__text">Национальный центр когнитивных разработок&nbsp;&mdash; центр национальной технологической инициативы (НТИ), получивший
+					государственную поддержку по&nbsp;направлению &laquo;Технологии машинного обучения и&nbsp;когнитивные технологии&raquo;. Инфраструктурная основа
+					взаимодействия научных, образовательных и&nbsp;промышленных организаций</p>
+				<p class="footer__students">Сделано студентами Яндекс.Практикума 2022г.</p>
+			</div>
+			<div class="footer__nav">
+				<h2 class="footer__link-title">О центре</h2>
+				<ul class="footer__list">
+					<li>
+						<a href="#about" class="footer__item">О нас</a>
+					</li>
+					<li>
+						<a href="#" class="footer__item">Главная</a>
+					</li>
+					<li>
+						<a href="#team" class="footer__item">Команда</a>
+					</li>
+					<li>
+						<a href="#" class="footer__item">Лаборатория</a>
+					</li>
+					<li>
+						<a href="#" class="footer__item">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__nav">
+				<h2 class="footer__link-title">Развитие</h2>
+				<ul class="footer__list">
+					<li>
+						<a href="#" class="footer__item">Образование</a>
+					</li>
+					<li>
+						<a href="#" class="footer__item">Аспирантура</a>
+					</li>
+					<li>
+						<a href="#" class="footer__item">Магистратура</a>
+					</li>
+					<li>
+						<a href="#publications" class="footer__item">Публикации</a>
+					</li>
+					<li>
+						<a href="#" class="footer__item">Проекты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__contacts">
+				<h3 class="footer__city">г.Санкт-Петербург</h3>
+				<p class="footer__address">199034, Санкт-Петербург, Биржевая линия, д.&nbsp;4, лит. М, ауд. 302С</p>
+				<ul class="footer__phones">
+					<li class="footer__phone">+7 (812) 337-64-90</li>
+					<li class="footer__phone">+7 (812) 337-64-94</li>
+				</ul>
+				<p class="footer__e-mail">anna.lutsenko@itmo.ru</p>
+				<ul class="footer__social">
+					<li class="footer__social-item">
+						<img src="images/icon-vk.svg" alt="VK" class="footer__icon">
+					</li>
+					<li class="footer__social-item">
+						<img src="images/icon-facebook.svg" alt="Facebook" class="footer__icon">
+					</li>
+					<li class="footer__social-item">
+						<img src="images/icon-telegram.svg" alt="Телеграм" class="footer__icon">
+					</li>
+					<li class="footer__social-item">
+						<img src="images/icon-insta.svg" alt="Instagram" class="footer__icon">
+					</li> <!--Возможно, инстаграм и фейсбук стоит убрать -->
+					<li class="footer__social-item">
+						<img src="images/icon-youtube.svg" alt="Youtube" class="footer__icon">
+					</li>
+				</ul>
+			</div>
+			</div>
+		</footer>
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<script type="module" src="scripts/index.js"></script>
 	</body>
