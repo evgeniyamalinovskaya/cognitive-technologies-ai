@@ -5,6 +5,8 @@
 @import '../blocks/header/header.css';
 @import '../blocks/about/about.css';
 
+@import url(../blocks/lab/lab.css);
+
 @import '../blocks/intro/intro.css';
 @import '../blocks/about/about.css';
 @import '../blocks/publications/publications.css';
