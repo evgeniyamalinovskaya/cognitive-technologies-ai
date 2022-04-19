@@ -33,7 +33,6 @@ const liClass = document.querySelector('.header__li');
 
 
 menuItem.addEventListener('click', function () {
-    // menuClass.classList.add('header__link_add');
 
     console.log(this)
     const subItem = this.querySelector('.dropdown-menu');
@@ -42,8 +41,3 @@ menuItem.addEventListener('click', function () {
 
     subItem.style.display = "flex"
 });
-
-// education.addEventListener('click', function () {
-//     menuClass.classList.remove('header__link_add');
-// })
-
