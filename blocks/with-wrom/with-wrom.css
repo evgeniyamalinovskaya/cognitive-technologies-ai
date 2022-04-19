@@ -1,0 +1,61 @@
+.with-whom {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.with-whom__title {
+    padding: 101px 0 30px 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+
+.with-whom__paragraph {
+    margin: 0;
+    padding: 0;
+    max-width: 920px;
+    height: 90px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.with-whom__container {
+    max-width: 1110px;
+    max-height: 146px;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 103px 0 80px 0;
+    display: grid;
+    grid-row-gap: 45px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.with-whom__item {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.with-whom__logo {
+    height: 48px;
+}
+
+@media (max-width: 1130px) {
+
+    .with-whom__item_type_none {
+        display: none;
+    }
+
+    .with-whom__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}

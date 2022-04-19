@@ -5,11 +5,14 @@
 @import '../blocks/header/header.css';
 @import '../blocks/about/about.css';
 
-@import url(../blocks/lab/lab.css);
+
 
 @import '../blocks/intro/intro.css';
 @import '../blocks/about/about.css';
+@import '../blocks/lab/lab.css';
 @import '../blocks/publications/publications.css';
+@import '../blocks/projects/projects.css';
 @import '../blocks/team/team.css';
 @import '../blocks/connection/connection.css';
+@import '../blocks/with-wrom/with-wrom.css';
 @import '../blocks/footer/footer.css';
